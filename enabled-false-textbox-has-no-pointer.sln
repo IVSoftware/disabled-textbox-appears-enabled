@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "enabled-false-textbox-has-no-pointer", "enabled-false-textbox-has-no-pointer\enabled-false-textbox-has-no-pointer.csproj", "{037BB230-21D0-4612-BDE0-1849926B7690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{037BB230-21D0-4612-BDE0-1849926B7690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037BB230-21D0-4612-BDE0-1849926B7690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037BB230-21D0-4612-BDE0-1849926B7690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037BB230-21D0-4612-BDE0-1849926B7690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDB880D0-5531-4A38-9006-16EB7D30AFEB}
+	EndGlobalSection
+EndGlobal
