@@ -18,7 +18,9 @@ namespace enabled_false_textbox_has_no_pointer
             checkBoxEnabled.Checked = true;
             checkBoxEnabled.CheckedChanged += (sender, e) =>
             {
-                textBox1.Enabled = checkBoxEnabled.Checked;
+                button1.Enabled =
+                    textBox1.Enabled = 
+                    checkBoxEnabled.Checked;   
             };
         }
     }
@@ -39,6 +41,30 @@ namespace enabled_false_textbox_has_no_pointer
             using (Graphics graphics = CreateGraphics())
             {
                 TextBoxRenderer.DrawTextBox(graphics, Bounds, System.Windows.Forms.VisualStyles.TextBoxState.Normal);
+            }
+        }
+    }
+    class ButtonEx : Button
+    {
+        const int WM_PAINT = 0x000F;
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg.Equals(WM_PAINT) && !Enabled)
+            {
+                paintDisabled();
+                return;
+            }
+            base.WndProc(ref m);
+        }
+        private void paintDisabled()
+        {
+            using (Graphics graphics = CreateGraphics())
+            {
+                ButtonRenderer.DrawButton(
+                    graphics,
+                    Bounds,
+                    System.Windows.Forms.VisualStyles.PushButtonState.Normal
+               );
             }
         }
     }

@@ -29,8 +29,9 @@ namespace enabled_false_textbox_has_no_pointer
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new TextBoxEx();
+            this.textBox1 = new enabled_false_textbox_has_no_pointer.TextBoxEx();
             this.checkBoxEnabled = new System.Windows.Forms.CheckBox();
+            this.button1 = new ButtonEx();
             this.SuspendLayout();
             // 
             // textBox1
@@ -55,11 +56,21 @@ namespace enabled_false_textbox_has_no_pointer
             this.checkBoxEnabled.Text = "Enabled";
             this.checkBoxEnabled.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(170, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 39);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Sample Button";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 244);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBoxEnabled);
             this.Controls.Add(this.textBox1);
             this.Name = "MainForm";
@@ -73,6 +84,7 @@ namespace enabled_false_textbox_has_no_pointer
 
         private TextBoxEx textBox1;
         private System.Windows.Forms.CheckBox checkBoxEnabled;
+        private ButtonEx button1;
     }
 }
 
